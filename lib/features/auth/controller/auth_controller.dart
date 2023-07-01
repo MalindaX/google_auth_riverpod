@@ -12,6 +12,7 @@ class AuthController {
   AuthController({required AuthRepository authRepository}) : _authRepository = authRepository;
 
   void signInWithGoogle() {
+    print("singInController");
     _authRepository.signInWithGoogle();
   }
 }

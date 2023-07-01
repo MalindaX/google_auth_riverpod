@@ -9,7 +9,7 @@ class LoginScreen extends ConsumerWidget {
 
   void signInWithGoogle(WidgetRef ref) {
   ref.read(authControllerProvider).signInWithGoogle();
-}
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
