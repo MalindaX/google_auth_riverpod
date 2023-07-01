@@ -22,6 +22,7 @@ class AuthRepository {
 
   void signInWithGoogle() async {
     try {
+      print("Func");
       final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
       final googleAuth = await googleUser?.authentication;
       final credential = GoogleAuthProvider.credential(
